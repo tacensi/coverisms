@@ -1,0 +1,22 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+seo:
+  excludeFromSitemap: true
+---
+{%- if settings.isStaging -%}
+User-agent: *
+Disallow: /
+{%- else -%}
+Sitemap: {{ "/sitemap.xml" | htmlBaseUrl(settings.url) }}
+
+User-agent: Google-Extended
+User-agent: CCBot
+User-agent: FacebookBot
+User-agent: GPTBot
+Disallow: /
+
+User-agent: *
+Disallow:
+Disallow: /404.html
+{%- endif -%}

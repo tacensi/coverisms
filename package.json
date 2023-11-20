@@ -1,0 +1,30 @@
+{
+  "name": "covers",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.1",
+    "@11ty/eleventy-fetch": "^4.0.0",
+    "@11ty/eleventy-img": "^3.1.8",
+    "@11ty/eleventy-plugin-rss": "^1.2.0",
+    "@alpinejs/intersect": "^3.13.2",
+    "alpinejs": "^3.13.2",
+    "bootstrap": "^5.3.2",
+    "clean-css": "^5.3.2",
+    "eleventy-plugin-embed-everything": "^1.17.0",
+    "eleventy-sass": "^2.2.3",
+    "html-minifier-terser": "^7.2.0",
+    "lodash.get": "^4.4.2",
+    "mime-types": "^2.1.35",
+    "node-html-to-image": "^4.0.0",
+    "rimraf": "^5.0.5",
+    "terser": "^5.24.0"
+  }
+}

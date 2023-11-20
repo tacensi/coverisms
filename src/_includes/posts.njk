@@ -1,0 +1,21 @@
+{% set postslist = collections.posts | reverse %}
+<ol reversed class="postlist" style="counter-reset: start-from {{ postslist.length + 1 }}">
+    {% for post in postslist %}
+        <article class="article article-{{ loop.index }} {% if loop.last %}article-last{% endif%}">
+            <div class="container px-4 px-lg-4">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <header class="mb-1">
+                            <a href="{{ post.url }}">
+                                <h2 class="post-title">{% if post.data.title %}{{ post.data.title }}{% else %}<code>{{ post.url }}</code>{% endif %}</h2>
+                            </a>
+                            <time class="post-meta postlist-date" datetime="{{ post.date | dateToRfc3339 }}">{{ post.date | formatDate }}</time>
+                        </header>
+                        {{ post.content | safe }}
+                    </div>
+                </div>
+            </div>
+        </article>
+        </li>
+    {% endfor %}
+</ol>
