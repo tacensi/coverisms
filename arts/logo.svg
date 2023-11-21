@@ -6,7 +6,7 @@
    viewBox="0 0 1500 1500"
    id="svg11"
    sodipodi:docname="logo.svg"
-   inkscape:version="1.3.1 (91b66b0783, 2023-11-16, custom)"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -27,12 +27,12 @@
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
      inkscape:zoom="1.7432539"
-     inkscape:cx="711.60029"
-     inkscape:cy="645.63171"
-     inkscape:window-width="3830"
-     inkscape:window-height="2087"
-     inkscape:window-x="5"
-     inkscape:window-y="36"
+     inkscape:cx="597.44596"
+     inkscape:cy="754.04965"
+     inkscape:window-width="1920"
+     inkscape:window-height="1031"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg11" />
   <path
@@ -67,7 +67,7 @@
      fill="#000000"
      data-fill-palette-color="accent"
      id="path11"
-     style="display:inline;stroke-width:2.82245;fill:#00ffff"
+     style="display:inline;stroke-width:2.82245;fill:#00ffff;fill-opacity:1"
      inkscape:label="note" />
   <path
      data-name="Compound Path"

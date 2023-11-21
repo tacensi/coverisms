@@ -105,8 +105,7 @@ blockquote {
     left: 0;
     right: 0;
     z-index: 1030;
-    border-bottom: 1px solid #dee2e6;
-    background-color: #fff;
+    background-color: #aaa;
     font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 #mainNav .navbar-brand {
@@ -126,20 +125,20 @@ blockquote {
 }
 @media (min-width: 992px) {
     #mainNav {
-        border-bottom: 1px solid transparent;
-        background: transparent;
+        //border-bottom: 1px solid transparent;
+        //background: transparent;
     }
     #mainNav .navbar-brand {
-        color: #fff;
+        color: #aaa;
     }
     #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
         color: rgba(255, 255, 255, 0.8);
     }
     #mainNav .navbar-nav > li.nav-item > a.nav-link {
-        color: #fff;
+        color: $gray-900;
     }
     #mainNav .navbar-nav > li.nav-item > a.nav-link:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link:hover {
-        color: rgba(255, 255, 255, 0.8);
+        color: black;
     }
 }
 @media (min-width: 992px) {
@@ -153,10 +152,10 @@ blockquote {
     #mainNav.is-fixed {
         /* when the user scrolls down, we hide the header right above the viewport */
         position: fixed;
-        top: -115px;
+        top: -118px;
         transition: transform 0.2s;
-        border-bottom: 1px solid white;
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: rgba(204, 204, 204, 0.9);
+        padding-bottom: 2rem;
     }
     #mainNav.is-fixed .navbar-brand {
         color: #212529;
@@ -165,10 +164,10 @@ blockquote {
         color: #0085A1;
     }
     #mainNav.is-fixed .navbar-nav > li.nav-item > a {
-        color: #212529;
+        color: $gray-700;
     }
     #mainNav.is-fixed .navbar-nav > li.nav-item > a:focus, #mainNav.is-fixed .navbar-nav > li.nav-item > a:hover {
-        color: #0085A1;
+        color: $gray-900;
     }
     #mainNav.is-visible {
         /* if the user changes the scrolling direction, we show the header */
@@ -187,24 +186,14 @@ header.masthead {
     padding-top: calc(2rem + 57px);
     padding-bottom: 1rem;
     background: no-repeat center center;
-    background-color: #6c757d;
+    background-color: #aaa;
     background-size: cover;
     background-attachment: scroll;
-}
-header.masthead:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #212529;
-    opacity: 0.5;
 }
 header.masthead .page-heading,
 header.masthead .post-heading,
 header.masthead .site-heading {
-    color: #fff;
+    color: #aaa;
 }
 header.masthead .page-heading,
 header.masthead .site-heading {

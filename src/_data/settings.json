@@ -5,23 +5,23 @@
 	"author": {
 		"name": "Thiago Censi",
 		"email": "tacensi@gmail.com",
-		"url": "https://tacensi.com",
+		"url": "https://coverisms.com",
 		"location": "Rio, Brasil"
 	},
 	"meta": {
 		"separator": "•",
-        "title": "Covers",
+        "title": "Coverisms",
 		"opengraphDefaultImage": "/assets/img/opengraph-default.png"
 	},
 	"seo": {
-		"defaultChangeFrequency": "daily",
+		"defaultChangeFrequency": "weekly",
 		"defaultPriority": "0.7"
 	},
 	"manifest": {
-		"themeColor": "#eceff4",
-		"backgroundColor": "#eceff4",
+		"themeColor": "#bbb",
+		"backgroundColor": "#333",
 		"display": "minimal-ui",
 		"orientation": "portrait-primary",
-		"categories": ["business", "photo"]
+		"categories": ["music"]
 	}
 }

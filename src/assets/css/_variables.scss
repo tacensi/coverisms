@@ -22,13 +22,13 @@ $black:    #000 !default;
 $blue:    #375a7f !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
+$pink:    #ff00ff !default;
 $red:     #e74c3c !default;
 $orange:  #fd7e14 !default;
 $yellow:  #f39c12 !default;
 $green:   #00bc8c !default;
 $teal:    #20c997 !default;
-$cyan:    #3498db !default;
+$cyan:    rgba(0,190,255) !default;
 
 $primary:       $blue !default;
 $secondary:     $gray-700 !default;
@@ -48,7 +48,7 @@ $body-color:                $white !default;
 
 // Links
 
-$link-color:                $success !default;
+$link-color:                $cyan !default;
 
 // Fonts
 

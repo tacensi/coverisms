@@ -1,9 +1,9 @@
 module.exports = {
     meta: {
-        title: 'Cover',
+        title: 'Coverisms',
         rssTitle: 'RSS Feed',
         jsonTitle: 'JSON Feed',
-        description: 'A multilingual, clean, green, 11ty starter theme',
+        description: 'A blog about song covers',
         opengraphDefaultAlt: 'An English description of the default opengraph image'
     },
     header: {
