@@ -9,7 +9,7 @@
 
         <!-- charset / viewport -->
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <!-- title / description -->
         <title>{{ t }}</title>
@@ -30,9 +30,9 @@
         <meta property="og:image:alt" content="{{ ia }}"/>
 
         <!-- icons -->
-        <link rel="icon" href="{{ "/favicon.ico" | htmlBaseUrl(settings.url) }}" sizes="any">
-        <link rel="icon" href="{{ "/assets/img/icon.svg" | htmlBaseUrl(settings.url) }}" type="image/svg+xml">
-        <link rel="apple-touch-icon" href="{{ "/assets/img/icon-180.png" | htmlBaseUrl(settings.url) | cdnify }}">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
 
         <!-- styles -->
         <link rel="stylesheet" href="/assets/css/styles.css?v={% version %}">
@@ -41,8 +41,6 @@
         <link rel="alternate" href="{{ "/feed/feed.xml" }}" type="application/atom+xml" title="{{ 'meta.rssTitle' }} {{ settings.meta.separator }} {{ 'meta.title' }}">
 		<link rel="alternate" href="{{ "/feed/feed.json" }}" type="application/json" title="{{ 'meta.jsonTitle' }} {{ settings.meta.separator }} {{ 'meta.title' }}">
 
-        <!-- preload / prefetch -->
-        {% if (settings.isProduction or settings.isStaging) and settings.cdn %}<link rel="dns-prefetch" href="//i0.wp.com">{% endif %}
 
         <!-- everything else -->
         <link rel="manifest" href="{{ "/site.webmanifest" }}"">
