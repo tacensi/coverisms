@@ -1,27 +1,28 @@
-<header class="p-3 sticky-md-top bg-light">
+<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
 	<div class="container">
-		<div class="d-flex flex-wrap align-items-center">
-			<a href="/" class="mb-2 mb-lg-0 link-body-emphasis text-decoration-none site-title">
-				<svg class="svg"  viewBox="0 0 239.90784 239.90784" height="50px" role="img" aria-label="Coverisms">
+		<div class="d-flex flex-wrap align-items-center justify-content-between">
+			<a href="/" class="mb-2 mb-lg-0 link-body-emphasis text-decoration-none site-title d-flex align-items-center">
+				<svg class="site-title__logo svg"  viewBox="0 0 239.90784 239.90784" height="50px" role="img" aria-label="Coverisms">
 					<use xlink:href="/assets/img/icon.svg#icon"></use>
 				</svg>
-				<span class="d-xs-none d-md-inline-block fs-1">Coverisms</span>
+				<span class="d-none d-md-inline-block fs-1 site-title__name mx-2">Coverisms</span>
 			</a>
 
 
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				Menu
 				<i class="fas fa-bars"></i>
 			</button>
 
-			<ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+			<ul class="nav nav-pills main-nav flex-grow-1 w-100">
 				{% for item in navigation %}
 					{%- set url = item.url %}
 					<li class="nav-item">
 						<a
-							class="nav-link px-2 link-body-emphasis"
 							href="{{ url }}"
-							{% if page.url === url %}aria-current="page"{% endif %}
+							class="nav-link px-2 link-body-emphasis
+							{% if page.url === url %} active" aria-current="page{% endif %}
+						"
 						>
 							{{ item.text }}
 						</a>
@@ -29,9 +30,9 @@
 				{%- endfor %}
 			</ul>
 
-{#			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">#}
-{#				<input type="search" class="form-control" placeholder="Search..." aria-label="Search">#}
-{#			</form>#}
+			{#			<form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">#}
+			{#				<input type="search" class="form-control" placeholder="Search..." aria-label="Search">#}
+			{#			</form>#}
 		</div>
 	</div>
 </header>
