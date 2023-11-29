@@ -1,23 +1,25 @@
-<header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+<header class="py-3 mb-4 fixed-top bg-body">
 	<div class="container">
-		<div class="d-flex flex-wrap align-items-center justify-content-between">
-			<a href="/" class="mb-2 mb-lg-0 link-body-emphasis text-decoration-none site-title d-flex align-items-center">
+		<div class="grid">
+			<a href="/" class="mb-2 mb-lg-0 link-body-emphasis text-decoration-none site-title g-col-8 g-col-md-4 d-flex align-items-center">
 				<svg class="site-title__logo svg"  viewBox="0 0 239.90784 239.90784" height="50px" role="img" aria-label="Coverisms">
 					<use xlink:href="/assets/img/icon.svg#icon"></use>
 				</svg>
 				<span class="d-none d-md-inline-block fs-1 site-title__name mx-2">Coverisms</span>
 			</a>
 
+			<div class="g-col-4 d-flex justify-content-end align-items-center d-md-none">
+				<button class="activate-nav-button btn btn-outline-dark" type="button" aria-label="Toggle navigation">
+					Menu
+					<i class="fas fa-bars"></i>
+				</button>
+			</div>
 
-			<button class="navbar-toggler d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-				Menu
-				<i class="fas fa-bars"></i>
-			</button>
 
-			<ul class="nav nav-pills main-nav flex-grow-1 w-100">
+			<ul class="destaque nav nav-pills main-nav g-col-12 g-col-md-8 flex-column flex-md-row d-flex align-items-center justify-content-md-end active">
 				{% for item in navigation %}
 					{%- set url = item.url %}
-					<li class="nav-item">
+					<li class="nav-item fw-bold">
 						<a
 							href="{{ url }}"
 							class="nav-link px-2 link-body-emphasis

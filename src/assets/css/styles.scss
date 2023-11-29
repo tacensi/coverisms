@@ -1,6 +1,6 @@
 // scss-docs-start import-stack
 // Configuration
-//@import "variables";
+@import "variables";
 @import "fonts";
 @import "bootstrap/scss/functions";
 @import "bootstrap/scss/variables";
@@ -55,6 +55,20 @@
 
 .site-title__name {
 	margin-top: -.25rem;
+}
+
+.main-nav {
+	max-height: 0;
+	overflow: hidden;
+
+	&.active {
+		max-height: 100vh;
+	}
+
+	@include media-breakpoint-up(sm) {
+		max-height: none;
+		height: auto;
+	}
 }
 
 
