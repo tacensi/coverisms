@@ -49,6 +49,29 @@
 @import "bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
 
+.main-header {
+	background: url("/assets/img/halftone_white.svg") left 160% repeat-x,
+	linear-gradient(0deg, rgba(255,255,255,0) 40%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 60%, rgba(255,255,255,0) 60%);
+	background-size: 65px, 100%;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: url("/assets/img/halftone_white.svg") left 160% repeat-x;
+		transform: rotate(-180deg);
+		background-size: 65px;
+		z-index: -1;
+	}
+}
+
+.main-header .grid {
+	row-gap: 0;
+}
+
 .site-title {
 	font-family: Vina, "Arial Black", Impact, sans-serif;
 }
@@ -69,8 +92,8 @@
 		max-height: none;
 		height: auto;
 	}
-}
 
+}
 
 //
 //body {
